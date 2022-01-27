@@ -44,7 +44,7 @@ variable "persistent_metadata_server_shape" { default = "VM.Standard2.8" }
 variable "persistent_metadata_server_flex_shape_ocpus" { default = 8 }
 variable "persistent_metadata_server_flex_shape_mem" { default = 120 }
 variable "scratch_metadata_server_shape" { default = "VM.DenseIO2.8" }
-variable "metadata_server_node_count" { default = 1 }
+variable "metadata_server_node_count" { default = 2 }
 # if disk_count > 1, then it create multiple MDS instance, each with 1 disk as MDT for optimal performance. If node has both local nvme ssd and block storage, block storage volumes will be ignored.
 variable "metadata_server_disk_count" { default = 1 }
 variable "metadata_server_disk_size" { default = 400 }
